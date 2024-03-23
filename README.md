@@ -18,17 +18,17 @@ The idea is simple , we want to find a kernel function that:
 * can be triggered from UserMode (well , so we want to use it whenever we have a message to send to the driver from usermode ...) 
 * gets at least one useful argument (so we can pass data to our driver)
 
-# Sounds good , but  do we find a .data pointer ?
+# Sounds good , but how do we find a .data pointer ?
 we can take advantage of control flow guard by searching for '_guard_dispatch' prefixed calls , to elaborate : 
 
 when a module is compiled with /guard:cf , the compiler will analyze control flow for indirect call targets at compile time and insert code (ie _guard_dispatch_icall and others) to verify the targets at runtime 
 so , simply put , looking for _guard_dispatch calls will lead us to indirect calls 
 
-we can ALT+T in IDA to find all occurences of _guard_dispatch in ntoskrnl (or any other module that is somewhat exposed to usermode, like win32k.sys)
+we can follow that by ALT+T in IDA to find all occurences of _guard_dispatch in ntoskrnl (or any other module that is somewhat exposed to usermode, like win32k.sys, win32kfull.sys etc)
 
-CTRL + F  for Nt prefixed functions (often being syscalls -> can be called from Usermode) 
+CTRL + F  to find Nt prefixed functions ( being syscalls they can be called from Usermode) 
 
-reverse the function , specifically : 
+lastly , we need to reverse the function , mainly to  : 
 * understand the code path that leads to the indirect call -  can we trigger it from UM ?
 * understand the function prototype , can you use it for the way you communicate ?
 * find the corresponding native api function and call it accordingly in your client
@@ -36,7 +36,9 @@ reverse the function , specifically :
 
 # PoC : NtConvertBetweenAuxiliaryCounterAndPerformanceCounter 
 the function converts the specified auxiliary counter value to the corresponding performance counter value; optionally provides the estimated conversion error in nanoseconds due to latencies and maximum possible drift , but we dont care about that!
-what so do care about , is the fact the function is calling nt!HalpTimerConvertAuxiliaryCounterToPerformanceCounter by a .data pointer in HalPrivateDispatchTable : ) 
+what we do care about , is the fact the function is calling nt!HalpTimerConvertAuxiliaryCounterToPerformanceCounter by a .data pointer in HalPrivateDispatchTable : ) 
 
-In addition , we can pass a pointer (to a pointer) to a struct to it , and it wil 
+In addition , we can pass a pointer (to a pointer) to a struct to it , and it will pass it along to HalpTimerConvertAuxiliaryCounterToPerformanceCounter , we can hook it and see the usermode sent struct ourselves... (identifying our client requests using a predefined magic)
+
+the PoC demonstrates exactly that
 
