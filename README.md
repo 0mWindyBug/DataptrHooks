@@ -38,7 +38,12 @@ lastly , we need to reverse the function , mainly to  :
 the function converts the specified auxiliary counter value to the corresponding performance counter value; optionally provides the estimated conversion error in nanoseconds due to latencies and maximum possible drift , but we dont care about that!
 what we do care about , is the fact the function is calling nt!HalpTimerConvertAuxiliaryCounterToPerformanceCounter by a .data pointer in HalPrivateDispatchTable : ) 
 
+![windbgdataptr](https://github.com/0mWindyBug/DataptrHook/assets/139051196/bac23e2e-d6d3-443a-8446-9bcb08583ccd)
+
 In addition , we can pass a pointer (to a pointer) to a struct to it , and it will pass it along to HalpTimerConvertAuxiliaryCounterToPerformanceCounter , which we can hook(by only replacing a pointer and retrive the sent data (identifying our client requests using a predefined magic)
+
+![ntaux](https://github.com/0mWindyBug/DataptrHook/assets/139051196/7c5fbbb0-854a-4828-86fa-eb179846ba74)
 
 the PoC demonstrates exactly that , but keep in mind this specific poitner has been used for a while now in the game hacking community so Anti Cheats will clap you, its best you find your own pointer 
 
+![datahook](https://github.com/0mWindyBug/DataptrHook/assets/139051196/28431f37-104c-4179-ad20-4424cea915ac)
