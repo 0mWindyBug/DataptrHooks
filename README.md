@@ -1,4 +1,4 @@
-# DataptrHook
+# DataptrHooks
 ntoskrnl .data pointer hook on NtConvertBetweenAuxiliaryCounterAndPerformanceCounter for UM-KM communication 
 
 # Motivation (for newbies) 
