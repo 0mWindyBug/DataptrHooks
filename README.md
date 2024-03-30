@@ -52,9 +52,10 @@ the PoC demonstrates exactly that , but keep in mind this specific poitner has b
 # PoC : CiQueryInformation 
 the function is called by SeCodeIntegrityQueryInformation through a .data pointer in SeSiCallbacks , and SeCodeIntegrityQueryInformation is called when calling NtQuerySystemInformation with SystemCodeIntegrityInformation , as shown below : ) 
 
+![SeQueryCiInfo](https://github.com/0mWindyBug/DataptrHook/assets/139051196/068e207c-9636-4c92-b4e2-7bd9f3d45e69)
+
 ![Screenshot 2024-03-30 100336](https://github.com/0mWindyBug/DataptrHook/assets/139051196/7c02631e-10ee-42f4-bf8f-ae509238739b)
 
-![CiQUeryInforamtion](https://github.com/0mWindyBug/DataptrHook/assets/139051196/b71f4eae-bf38-449d-aa41-9e621efdcf54)
 
 
 As we did with NtConvertBetweenAuxiliaryCounterAndPerformanceCounter , we make the pointer point to our driver defined function 
