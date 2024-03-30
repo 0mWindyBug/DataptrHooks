@@ -1,0 +1,19 @@
+﻿  Building 'DataptrHookDriver' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Stamping x64\Release\DataptrHookDriver.inf
+  Stamping [Version] section with DriverVer=03/23/2024,15.1.17.850
+C:\Users\dorge\source\repos\DataptrHook\DataptrHookDriver\DataptrHookDriver.inf(28-28): warning 2083: Section [standard.ntamd64] not referenced or used.
+  DataptrHookDriver.vcxproj -> C:\Users\dorge\source\repos\DataptrHook\x64\Release\DataptrHookDriver.sys
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\dorge\source\repos\DataptrHook\x64\Release\DataptrHookDriver\dataptrhookdriver.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\dorge\source\repos\DataptrHook\x64\Release\DataptrHookDriver\dataptrhookdriver.cat
+  

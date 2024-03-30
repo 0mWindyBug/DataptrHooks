@@ -1,0 +1,6 @@
+﻿  main.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 11 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  DataptrHook.vcxproj -> C:\Users\dorge\source\repos\DataptrHook\x64\Release\DataptrHook.exe
