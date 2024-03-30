@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SeQueryCodeIntegrityHook", "SeQueryCodeIntegrityHook\SeQueryCodeIntegrityHook.vcxproj", "{265C1434-379A-480F-B797-F36D09EC6505}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SeCodeIntegrityQueryHookDriver", "SeCodeIntegrityQueryHookDriver\SeCodeIntegrityQueryHookDriver.vcxproj", "{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{265C1434-379A-480F-B797-F36D09EC6505}.Debug|ARM64.ActiveCfg = Debug|x64
+		{265C1434-379A-480F-B797-F36D09EC6505}.Debug|ARM64.Build.0 = Debug|x64
+		{265C1434-379A-480F-B797-F36D09EC6505}.Debug|x64.ActiveCfg = Debug|x64
+		{265C1434-379A-480F-B797-F36D09EC6505}.Debug|x64.Build.0 = Debug|x64
+		{265C1434-379A-480F-B797-F36D09EC6505}.Debug|x86.ActiveCfg = Debug|Win32
+		{265C1434-379A-480F-B797-F36D09EC6505}.Debug|x86.Build.0 = Debug|Win32
+		{265C1434-379A-480F-B797-F36D09EC6505}.Release|ARM64.ActiveCfg = Release|x64
+		{265C1434-379A-480F-B797-F36D09EC6505}.Release|ARM64.Build.0 = Release|x64
+		{265C1434-379A-480F-B797-F36D09EC6505}.Release|x64.ActiveCfg = Release|x64
+		{265C1434-379A-480F-B797-F36D09EC6505}.Release|x64.Build.0 = Release|x64
+		{265C1434-379A-480F-B797-F36D09EC6505}.Release|x86.ActiveCfg = Release|Win32
+		{265C1434-379A-480F-B797-F36D09EC6505}.Release|x86.Build.0 = Release|Win32
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Debug|ARM64.Build.0 = Debug|ARM64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Debug|x64.ActiveCfg = Debug|x64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Debug|x64.Build.0 = Debug|x64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Debug|x64.Deploy.0 = Debug|x64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Debug|x86.ActiveCfg = Debug|x64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Debug|x86.Build.0 = Debug|x64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Debug|x86.Deploy.0 = Debug|x64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Release|ARM64.ActiveCfg = Release|ARM64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Release|ARM64.Build.0 = Release|ARM64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Release|ARM64.Deploy.0 = Release|ARM64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Release|x64.ActiveCfg = Release|x64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Release|x64.Build.0 = Release|x64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Release|x64.Deploy.0 = Release|x64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Release|x86.ActiveCfg = Release|x64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Release|x86.Build.0 = Release|x64
+		{0D3B63F2-7992-4D02-A87E-BDBFD01536B6}.Release|x86.Deploy.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {560BE2E5-A23A-49DC-8B58-A5B194F528C4}
+	EndGlobalSection
+EndGlobal

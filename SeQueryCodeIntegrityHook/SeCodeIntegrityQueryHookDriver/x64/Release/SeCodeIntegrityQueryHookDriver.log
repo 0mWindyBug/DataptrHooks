@@ -1,0 +1,39 @@
+﻿  Building 'SeCodeIntegrityQueryHookDriver' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Stamping x64\Release\SeCodeIntegrityQueryHookDriver.inf
+  Stamping [Version] section with DriverVer=03/30/2024,9.58.23.582
+C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\SeCodeIntegrityQueryHookDriver\SeCodeIntegrityQueryHookDriver.inf(28-28): warning 2083: Section [standard.ntamd64] not referenced or used.
+  main.c
+C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\SeCodeIntegrityQueryHookDriver\defs.h(270,1): warning C4005: 'OBJ_VALID_ATTRIBUTES': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\ntdef.h(1810): message : see previous definition of 'OBJ_VALID_ATTRIBUTES'
+C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\SeCodeIntegrityQueryHookDriver\defs.h(353,6): warning C4201: nonstandard extension used: nameless struct/union
+C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\SeCodeIntegrityQueryHookDriver\defs.h(354,5): warning C4201: nonstandard extension used: nameless struct/union
+C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\SeCodeIntegrityQueryHookDriver\defs.h(386,6): warning C4201: nonstandard extension used: nameless struct/union
+C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\SeCodeIntegrityQueryHookDriver\defs.h(387,5): warning C4201: nonstandard extension used: nameless struct/union
+C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\SeCodeIntegrityQueryHookDriver\defs.h(398,3): warning C4201: nonstandard extension used: nameless struct/union
+C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\SeCodeIntegrityQueryHookDriver\defs.h(444,3): warning C4201: nonstandard extension used: nameless struct/union
+C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\SeCodeIntegrityQueryHookDriver\main.c(56,51): warning C4996: 'ExAllocatePool': ExAllocatePool is deprecated, use ExAllocatePool2.
+C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\SeCodeIntegrityQueryHookDriver\main.c(39,10): warning C4189: 'output': local variable is initialized but not referenced
+C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\SeCodeIntegrityQueryHookDriver\main.c(34,11): warning C4189: 'LocalIntBase': local variable is initialized but not referenced
+C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\SeCodeIntegrityQueryHookDriver\main.c(92,43): warning C4047: 'function': 'INT64' differs in levels of indirection from 'PVOID'
+C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\SeCodeIntegrityQueryHookDriver\main.c(92,33): warning C4024: 'OriginalFunction': different types for formal and actual parameter 1
+C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\SeCodeIntegrityQueryHookDriver\main.c(99,20): warning C4047: 'return': 'INT64' differs in levels of indirection from 'void *'
+C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\SeCodeIntegrityQueryHookDriver\main.c(104,43): warning C4047: 'function': 'INT64' differs in levels of indirection from 'PVOID'
+C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\SeCodeIntegrityQueryHookDriver\main.c(104,33): warning C4024: 'OriginalFunction': different types for formal and actual parameter 1
+  SeCodeIntegrityQueryHookDriver.vcxproj -> C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\x64\Release\SeCodeIntegrityQueryHookDriver.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\x64\Release\SeCodeIntegrityQueryHookDriver.sys
+  
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\x64\Release\SeCodeIntegrityQueryHookDriver\secodeintegrityqueryhookdriver.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\dorge\source\repos\SeQueryCodeIntegrityHook\x64\Release\SeCodeIntegrityQueryHookDriver\secodeintegrityqueryhookdriver.cat
+  
