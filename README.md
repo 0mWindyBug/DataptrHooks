@@ -52,7 +52,7 @@ the PoC demonstrates exactly that , but keep in mind this specific poitner has b
 # PoC : CiQueryInformation 
 the function is called by SeCodeIntegrityQueryInformation through a .data pointer in SeSiCallbacks , and SeCodeIntegrityQueryInformation is called when calling NtQuerySystemInformation with SystemCodeIntegrityInformation , as shown below : ) 
 
-![CiQUeryInforamtion](https://github.com/0mWindyBug/DataptrHook/assets/139051196/4ac488bf-dacf-41aa-bd07-ad160f320eb2)
+![CiQUeryInforamtion](https://github.com/0mWindyBug/DataptrHook/assets/139051196/9c57739c-1a14-4b3b-9781-b990756ab349)
 
 ![Screenshot 2024-03-30 100336](https://github.com/0mWindyBug/DataptrHook/assets/139051196/08c78557-f6cf-413f-8116-85398c5ce441)
 
