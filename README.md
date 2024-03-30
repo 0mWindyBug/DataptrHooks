@@ -47,3 +47,25 @@ In addition , we can pass a pointer (to a pointer) to a struct to it , and it wi
 the PoC demonstrates exactly that , but keep in mind this specific poitner has been used for a while now in the game hacking community so Anti Cheats will clap you, its best you find your own pointer 
 
 ![datahook](https://github.com/0mWindyBug/DataptrHook/assets/139051196/28431f37-104c-4179-ad20-4424cea915ac)
+
+
+# PoC : CiQueryInformation 
+the function is called by SeCodeIntegrityQueryInformation through a .data pointer in SeSiCallbacks , and SeCodeIntegrityQueryInformation is called when calling NtQuerySystemInformation with SystemCodeIntegrityInformation , as shown below : ) 
+
+![CiQUeryInforamtion](https://github.com/0mWindyBug/DataptrHook/assets/139051196/4ac488bf-dacf-41aa-bd07-ad160f320eb2)
+
+![Screenshot 2024-03-30 100336](https://github.com/0mWindyBug/DataptrHook/assets/139051196/08c78557-f6cf-413f-8116-85398c5ce441)
+
+As we did with NtConvertBetweenAuxiliaryCounterAndPerformanceCounter , we make the pointer point to our driver defined function 
+
+the hook filters out requests (checking previous mode and magic) 
+
+note the SYSTEM_CODE_INTEGRITY_INFORMATION.Lentgh structure member must be initialzied with 8 , otherwise NTQSI will return STATUS_INFO_LENGTH_MISMATCH 
+
+to have more control , the SYSTEM_CODE_INTEGRITY_INFORMATION's second ULONG member is splitted into two INT16 members (keeping the overall struct size the same) 
+
+![datapocci](https://github.com/0mWindyBug/DataptrHook/assets/139051196/80afcd13-50c3-4ebf-839c-7ef9223e945f)
+
+
+
+
