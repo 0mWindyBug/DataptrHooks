@@ -1,7 +1,7 @@
 # DataptrHooks
 ntoskrnl .data pointer hook on NtConvertBetweenAuxiliaryCounterAndPerformanceCounter for UM-KM communication 
 
-# Motivation (for newbies) 
+# Motivation 
 the standard way to communicate between a usermode client and a kernel mode driver is through IOCTLs 
 
 IOCTLs require the driver to create both DriverObject & DeviceObject , and the User can send I/O to the device over a  Symbolic Link 
